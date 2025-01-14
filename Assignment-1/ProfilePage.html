@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ProfilePage</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>User Profile</h1>
+    </header>
+
+    <section class="profile-details">
+      <h2>Profile Details</h2>
+      <table>
+        <tr>
+          <th>Name</th>
+          <td>Anurag Khaiwal</td>
+        </tr>
+        <tr>
+          <th>Email</th>
+          <td>anuragkhaiwalofficial@example.com</td>
+        </tr>
+        <tr>
+          <th>Phone</th>
+          <td>+91-1223334444</td>
+        </tr>
+        <tr>
+          <th>Skills</th>
+          <td>HTML, CSS, JavaScript</td>
+        </tr>
+        <tr>
+          <th>Experience</th>
+          <td>1 year in web development</td>
+        </tr>
+      </table>
+    </section>
+
+    <section class="profile-form">
+      <h2>Update Profile</h2>
+      <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="skills">Skills:</label>
+        <select id="skills" name="skills">
+          <option value="html">HTML</option>
+          <option value="css">CSS</option>
+          <option value="javascript">JavaScript</option>
+        </select>
+
+        <fieldset>
+          <legend>Experience Level:</legend>
+          <label for="beginner">Beginner</label>
+          <input type="radio" id="beginner" name="experience" value="beginner">
+          <label for="intermediate">Intermediate</label>
+          <input type="radio" id="intermediate" name="experience" value="intermediate">
+          <label for="expert">Expert</label>
+          <input type="radio" id="expert" name="experience" value="expert">
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferred Technologies:</legend>
+          <label for="frontend">Frontend Development</label>
+          <input type="checkbox" id="frontend" name="tech[]" value="frontend">
+          <label for="backend">Backend Development</label>
+          <input type="checkbox" id="backend" name="tech[]" value="backend">
+        </fieldset>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </div>
+
+</body>
+</html>
